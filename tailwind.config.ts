@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc/generated-native";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -13,12 +14,23 @@ export default {
         foreground: "var(--foreground)",
         'blue': {
           900: '#1D0072',
-          800: '#381B8E'
+          800: '#381B8E',
+          700: '#1E00FF'
         },
         'orange': {
           500: '#FDA402'
         }
       },
+      animation: {
+        marquee: 'marquee 20s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(-100%)' }
+        }
+      }
+      
     },
   },
   plugins: [],

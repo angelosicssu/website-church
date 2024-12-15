@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           <div className="flex flex-col text-7xl uppercase gap-2">
             <h1>Seja</h1>
             <h1 
-            className="uppercase text-transparent stroke-text"
+            className="uppercase text-transparent stroke-text font-sans text-7xl"
             style={{
               WebkitTextStroke: "2px white",
               color: "transparent"
@@ -32,14 +33,60 @@ export default function Home() {
 
         </div>
         <div className="flex flex-col items-center gap-5">
-          <h1 className="uppercase text-4xl">Título do Vídeo</h1>
+          <h1 className="uppercase text-4xl">O Cristão Inteligente</h1>
           <div className="border-8 border-white rounded-md">
             <iframe src="https://www.youtube.com/embed/MuzUA2ZmxDE" width={570} height={320} className="rounded-md" allowFullScreen/>
           </div>
         </div>
         
       </div>
-      <span className="h-10 bg-blue-600">NIBGC</span>
+      
+      <div className="relative overflow-hidden bg-blue-700 p-1">
+        <div className="flex animate-marquee whitespace-nowrap">
+          <span className="text-sm text-white">
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+          </span>
+          <span className="text-sm text-white">
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+          </span>
+          <span className="text-sm text-white">
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+          </span>
+          <span className="text-sm text-white">
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+            NIBGC<span className="mx-2">•</span>
+          </span>
+          
+         
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <p>Foto</p>
+        </div>
+        <span><p>Divisória</p></span>
+        <div>
+          <p>Texto</p>
+        </div>
+      </div>
 
     </div>
   );
