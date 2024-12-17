@@ -13,9 +13,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'blue': {
+          950: '#292B4B',
           900: '#1D0072',
           800: '#381B8E',
-          700: '#1E00FF'
+          700: '#1E00FF',
+          600: '#0435E7',
+          500: '#466EFF',
+          300: '#77CAF8',
         },
         'orange': {
           500: '#FDA402'
