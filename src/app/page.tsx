@@ -1,10 +1,13 @@
+"use client"
+
+import Carousel from "@/components/carousel";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Home() {
+
   return (
     <div>
-
       <div 
         className="relative bg-cover bg-center text-white flex flex-row justify-between items-center py-5 px-20"
         style={{
@@ -113,18 +116,26 @@ export default function Home() {
         </div>
       </div>
 
-      <span className="bg-gradient-to-r from-blue-600 to-blue-500 flex justify-between px-4 py-2 items-center">
-        <div className="flex flex-col text-white text-3xl uppercase">
+      <div className="flex justify-between py-4 px-9 bg-gradient-to-r from-blue-600 to-blue-500 text-white items-center">
+        <div className="flex flex-col uppercase text-2xl">
           <p>Próxima</p>
           <p>Programação</p>
         </div>
         <div>
-          <Image src={'/icons/culto-familiar.svg'} height={150} width={250} alt=""></Image>
+          <Image src={'/icons/culto-familiar.svg'} width={160} height={30} alt=""></Image>
         </div>
-        <div className="bg-white py-5 px-10 text-3xl rounded-xl">
+        <div className="text-4xl bg-white text-black py-5 px-8 rounded-md">
           <p>1d 10h</p>
         </div>
-      </span>
+      </div>
+
+      <div className="flex flex-col justify-between gap-10 items-center py-7 px-8">
+        <div className="flex flex-col uppercase">
+          <p className="text-5xl">Conheça<br/>nossas</p>      
+          <p className="text-2xl">Programações</p>
+        </div>        
+        <Carousel />
+      </div>
 
     </div>
   );
